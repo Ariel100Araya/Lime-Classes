@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Classes | Lime Classes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="2020design.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body class="root">
+
+<!-- Navbar -->
+
+<div class="w3-bar w3-border">
+    <a href="classes.html" class="w3-bar-item w3-button w3-hide-small w3-red">Classes</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-orange">Clubs</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-yellow">Grades</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Libary</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">Reminders</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-purple">Calender</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-blank">More</a>
+    <button class="w3-button w3-right w3-hover-teal"><a href="index.html" class="black">Me</a></button>
+    <button class="w3-button w3-right w3-hover-teal">My School</button>
+</div>
+<br>
+<h1 class="title">Classes</h1>
+<br>
+<ul class="w3-ul w3-white w3-card-4 w3-hoverable">
+    <li class="w3-bar">
+      <div class="w3-bar-item">
+        <span class="w3-large">Health</span><br>
+        <span>First Period | Mrs. Gairing</span>
+        <a href="ClassView.html" class="black">Go to class ></a>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <div class="w3-bar-item">
+        <span class="w3-large">Algebra I Honors</span><br>
+        <span>Second period | Mrs. Sadat</span>
+        <a href="ClassView.html" class="black">Go to class ></a>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <div class="w3-bar-item">
+        <span class="w3-large">Science</span><br>
+        <span>Third Period | Dr. St Fleur</span>
+        <a href="ClassView.html" class="black">Go to class ></a>
+      </div>
+    </li>
+    
+    <li class="w3-bar">
+      <div class="w3-bar-item">
+        <span class="w3-large">History</span><br>
+        <span>Fourth Period | Mr. Miller</span>
+        <a href="ClassView.html" class="black">Go to class ></a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+

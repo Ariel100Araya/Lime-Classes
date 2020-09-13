@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home | Lime Classes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="2020design.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body class="root">
+
+<!-- Navbar -->
+<div class="w3-top">
+<div class="w3-bar w3-white">
+    <a href="classes.html" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Classes</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-orange">Clubs</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-yellow">Grades</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-green">Libary</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">Reminders</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-purple">Calender</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-blank">More</a>
+    <button class="w3-button w3-right w3-teal">Me</button>
+    <button class="w3-button w3-right w3-hover-teal">My School</button>
+</div>
+</div>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>User</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="classes.html">Classes</a>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="#">Work</a>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="#">Student ID</a>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="#">Events</a>
+  <a class="w3-bar-item w3-button w3-hover-teal" href="#">Settings</a>
+  <br>
+  <h4 class="w3-bar-item"><b>Overdue work</b></h4>
+  <h6 class="w3-bar-item">No overdue work! Nicely done!</h6>
+</nav>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+    
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Welcome to Lime Classes!</h2>
+      <h6 class="w3-text-teal">Ariel Araya | Developer for Classes</h6>
+      <p>Welcome to Lime Classes (or simply "Classes"). My name is Ariel and I am the creater of this mess. This is an aim to creating a simple but foucused user interface and making it easier to learn and stay foucused. Keep in mind that I am still working on this and it will be worked on a lot so just be calm and when a bug is found, click on the link below!</p>
+      <div class="w3-bar">
+          <button class="w3-teal w3-button w3-small w3-round-xxlarge w3-border w3-border-blue w3-round-large">Report issues</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Tour</h1>
+      <p>Welcome to Lime Classes! Want to take a tour? Just press the teal button!</p>
+      <div class="w3-bar">
+          <button class="w3-teal w3-button w3-small w3-round-xxlarge w3-border w3-border-blue w3-round-large">Take a tour!</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Thats the end!</h1>
+      <p>Thats all we have for you!</p>
+      </div>
+    </div>
+  </div>
+  <br>
+<br>
+<br>
+  <footer id="myFooter">
+    <div class="w3-center w3-container w3-theme-l2 w3-padding-32">
+      <h4>Made by Ariel Araya-Madrigal</h4>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
